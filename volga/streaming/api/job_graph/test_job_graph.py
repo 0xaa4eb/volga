@@ -15,7 +15,7 @@ class TestJobGraph(unittest.TestCase):
         jg = self._build_data_sync_job_graph()
         vertices = jg.job_vertices
         edges = jg.job_edges
-        assert len(vertices) == 2
+        assert len(vertices) == 3
         assert len(edges) == 1
 
         je: JobEdge = edges[0]
