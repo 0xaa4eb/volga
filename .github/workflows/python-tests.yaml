@@ -17,7 +17,7 @@ jobs:
         run: |
           pip install ruff
           ruff --output-format=github .
-        continue-on-error: true
+        continue-on-error: false
       - name: Start local Ray
         run: ray start --head
       # TODO when all tests are fixed replace with pytest

@@ -1,7 +1,6 @@
 import bisect
-from collections import deque
 from dataclasses import dataclass
-from typing import List, Optional, Callable, Deque, Dict
+from typing import List, Optional, Callable, Dict
 
 from pydantic import BaseModel
 from decimal import Decimal

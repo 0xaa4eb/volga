@@ -1,5 +1,3 @@
-from typing import Optional
-
 from volga.streaming.api.function.function import SourceFunction, SourceContext
 
 
