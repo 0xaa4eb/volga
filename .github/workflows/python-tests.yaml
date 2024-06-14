@@ -15,6 +15,7 @@ jobs:
           pip install .
       - name: Start local Ray
         run: ray start --head
+      # TODO when tests are fixed replace with pytest
       - name: Run test
         run: python volga/streaming/api/job_graph/test_job_graph.py
       - name: Stop local Ray
