@@ -13,6 +13,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install .
+      - name: Lint with Ruff
+        run: |
+          pip install ruff
+          ruff --output-format=github .
+        continue-on-error: true
       - name: Start local Ray
         run: ray start --head
       # TODO when all tests are fixed replace with pytest
