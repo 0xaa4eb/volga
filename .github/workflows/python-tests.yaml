@@ -20,5 +20,7 @@ jobs:
         run: python volga/streaming/api/job_graph/test_job_graph.py
       - name: Run test test_stream.py
         run: python volga/streaming/api/stream/test_stream.py
+      - name: Run test test_stream.py
+        run: python volga/streaming/runtime/core/execution_graph/test_execution_graph.py
       - name: Stop local Ray
         run: ray stop
