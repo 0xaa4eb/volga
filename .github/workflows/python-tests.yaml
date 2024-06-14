@@ -15,5 +15,7 @@ jobs:
           pip install .
       - name: Start local Ray
         run: ray start --head
+      - name: Run test
+        run: python volga/streaming/api/job_graph/test_job_graph.py
       - name: Stop local Ray
         run: ray stop
